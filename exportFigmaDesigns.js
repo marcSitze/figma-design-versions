@@ -2,9 +2,9 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const FIGMA_API_TOKEN = 'figd_RzaC0394r0K77ZMysZH5uoWnMePxjFG3eQZNGmQh';
-const FILE_ID = 'DsTMoukpoM35d1ZOdCSsWw';
-const EXPORT_PATH = 'figma_designs';
+const FIGMA_API_TOKEN = process.env.FIGMA_API_TOKEN;
+const FILE_ID = process.env.FILE_ID;
+const EXPORT_PATH = process.env.EXPORT_PATH;
 
 const headers = {
   'X-Figma-Token': FIGMA_API_TOKEN,
